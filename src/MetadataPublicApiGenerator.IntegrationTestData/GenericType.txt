@@ -1,0 +1,11 @@
+﻿namespace MetadataPublicApiGenerator.IntegrationTestData
+{
+    public class GenericWithTypeInParams<T> : System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<T>>, System.Collections.IEnumerable
+    {
+        public int X;
+        public int Y;
+        public GenericWithTypeInParams();
+        public System.Collections.Generic.IEnumerator<System.Collections.Generic.IEnumerable<T>> GetEnumerator();
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator();
+    }
+}

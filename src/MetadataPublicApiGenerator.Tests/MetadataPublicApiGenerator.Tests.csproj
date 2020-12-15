@@ -1,0 +1,24 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWarn>$(NoWarn);SA1600;CS1591</NoWarn>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.1" />
+    <PackageReference Include="Shouldly" Version="4.0.0-beta0002" />
+    <PackageReference Include="PublicApiGenerator" Version="10.1.0" />
+    <PackageReference Include="reactiveui" Version="11.4.1" />
+    <PackageReference Include="NetStandard.Library" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MetadataPublicApiGenerator.IntegrationTestData\MetadataPublicApiGenerator.IntegrationTestData.csproj" />
+    <ProjectReference Include="..\MetadataPublicApiGenerator\MetadataPublicApiGenerator.csproj" />
+  </ItemGroup>
+
+</Project>
